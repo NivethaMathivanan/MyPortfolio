@@ -1,0 +1,382 @@
+.hero {
+  position: relative;
+  padding: 10% 10px !important;
+  width: 100%;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+}
+
+.hero-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.code-bg {
+  position: absolute;
+  color: rgba(224, 210, 210, 0.13);
+  font-size: 1.2rem;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  user-select: none;
+}
+
+.code-bg:nth-child(1) {
+  top: 10%;
+  left: 5%;
+  animation: float 15s infinite linear;
+}
+
+.code-bg:nth-child(2) {
+  top: 15%;
+  right: 10%;
+  animation: float 18s infinite linear reverse;
+}
+
+.code-bg:nth-child(3) {
+  top: 90%;
+  /* left: 15%; */
+  animation: float 12s infinite linear;
+}
+
+.code-bg:nth-child(4) {
+  top: 25%;
+  left: 5%;
+  animation: float 15s infinite linear;
+}
+
+.code-bg:nth-child(5) {
+  top: 30%;
+  right: 10%;
+  animation: float 18s infinite linear reverse;
+}
+
+.code-bg:nth-child(6) {
+  bottom: 35%;
+  /* left: 15%; */
+  margin-left: 40%;
+  animation: float 12s infinite linear;
+}
+
+.code-bg:nth-child(7) {
+  top: 65%;
+  margin-left: 90%;
+  animation: float 15s infinite linear;
+}
+
+.code-bg:nth-child(8) {
+  top: 45%;
+  right: 10%;
+  animation: float 18s infinite linear reverse;
+}
+
+.code-bg:nth-child(9) {
+  bottom: 60%;
+  /* left: 15%; */
+  margin-left: 55% !important;
+  animation: float 12s infinite linear;
+}
+
+.code-bg:nth-child(10) {
+  top: 80%;
+
+  margin-left: 90%;
+  animation: float 18s infinite linear reverse;
+}
+
+.code-bg:nth-child(11) {
+  bottom: 65%;
+  left: 15%;
+  animation: float 12s infinite linear;
+}
+
+.code-bg:nth-child(12) {
+  top: 70%;
+  left: 5%;
+  animation: float 15s infinite linear;
+}
+
+.code-bg:nth-child(13) {
+  top: 80%;
+  margin-left: 50%;
+  animation: float 18s infinite linear reverse;
+}
+
+.code-bg:nth-child(14) {
+  top: 97%;
+  left: 15%;
+  animation: float 12s infinite linear;
+}
+
+.code-bg:nth-child(15) {
+  top: 95%;
+  margin-left: 30%;
+  animation: float 15s infinite linear;
+}
+
+.code-bg:nth-child(16) {
+  top: 95%;
+  margin-left: 40%;
+  animation: float 18s infinite linear reverse;
+}
+
+.code-bg:nth-child(17) {
+  bottom: 95%;
+  left: 15%;
+  margin-right: 80% !important;
+  animation: float 12s infinite linear;
+}
+
+.code-bg:nth-child(18) {
+  top: 37%;
+  right: 10%;
+  animation: float 18s infinite linear reverse;
+}
+
+.code-bg:nth-child(19) {
+  bottom: 77%;
+  left: 15%;
+  margin-left: 60%;
+  animation: float 12s infinite linear;
+}
+
+.code-bg:nth-child(20) {
+  top: 57%;
+  left: 5%;
+  margin-left: 50%;
+  animation: float 15s infinite linear;
+}
+
+.code-bg:nth-child(21) {
+  top: 37%;
+  right: 10%;
+  /* margin-top: 10%; */
+  margin-right: 60%;
+  animation: float 18s infinite linear reverse;
+}
+
+.code-bg:nth-child(22) {
+  top: 97%;
+  left: 15%;
+  margin-left: 40%;
+
+  animation: float 12s infinite linear;
+}
+
+.code-bg:nth-child(23) {
+  bottom: 47%;
+  margin-left: 50%;
+  top: 15%;
+  animation: float 12s infinite linear;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(-100px) rotate(5deg);
+  }
+}
+
+.hero-container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 2;
+}
+
+.hero-left {
+  flex: 1;
+  min-width: 300px;
+  margin-top: 10%;
+  /* padding-right: 40px; */
+
+}
+
+.hello-text {
+  font-size: 1.25rem;
+  color: #4fc3f7;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.hero-name {
+  font-size: 4.5rem;
+  margin: 0;
+  line-height: 1.1;
+  font-weight: 800;
+  background: linear-gradient(90deg, #4fc3f7, #7b2cbf);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-role {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 1rem 0;
+  color: #e0e0e0;
+}
+
+.typing-animation {
+  border-right: 3px solid #4fc3f7;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: #4fc3f7;
+  }
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #b0bec5;
+  margin: 1.5rem 0;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 2rem;
+ 
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #4fc3f7 0%, #7b2cbf 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(79, 195, 247, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(79, 195, 247, 0.4);
+}
+
+.btn-secondary {
+  border: 2px solid #4fc3f7;
+  color: #4fc3f7;
+  background: transparent;
+}
+
+.btn-secondary:hover {
+  background: rgba(79, 195, 247, 0.1);
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.hero-right {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.developer-illustration {
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .hero-name {
+    font-size: 3.5rem;
+  }
+
+  .hero-role {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 5% 60px;
+    text-align: center;
+  }
+
+  .hero-left {
+    padding-right: 0;
+    margin-bottom: 3rem;
+  }
+
+  .hero-container {
+    flex-direction: column;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-name {
+    font-size: 3rem;
+  }
+
+  .hero-role {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-name {
+    font-size: 2.5rem;
+  }
+
+  .hero-role {
+    font-size: 1.3rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (width: 320px) {
+  .hero-left {
+    margin-top: 50px !important;
+  }
+
+
+}

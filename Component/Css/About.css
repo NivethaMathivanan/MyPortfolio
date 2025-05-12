@@ -1,0 +1,174 @@
+.about-section {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  padding: 30px 20px;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.about-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-subtitle {
+  color: #4fc3f7;
+  font-size: 30px;
+font-weight: bold;
+  animation: fadeInDown 1s ease;
+}
+
+.about-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.about-location {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.about-education {
+  margin-bottom: 20px;
+  color: #eee;
+}
+
+.about-para {
+  line-height: 1.8;
+  color: #bbb;
+  margin-bottom: 40px;
+}
+
+.about-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card-box {
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 30px;
+  flex: 1 1 45%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.card-box:hover {
+  transform: translateY(-5px);
+}
+
+.card-box h4 {
+  margin-bottom: 15px;
+  color: #4fc3f7;
+}
+
+.personal-info span {
+  display: block;
+ 
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.personal-info span strong {
+  color: #4fc3f7;
+  margin-right: 10px;
+}
+
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+  gap: 40px;
+  margin: 20px;
+}
+
+.interest-item {
+  background: transparent;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px #30a0c2;
+
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.interest-item:hover {
+  background: #4fc3f7;
+  color: #000;
+}
+
+
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .card-box {
+    flex: 1 1 100%;
+  }
+
+  .about-title {
+    font-size: 28px;
+  }
+}
+/* From Uiverse.io by andrew-demchenk0 */ 
+.button {
+  position: relative;
+  width: 170px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid white !important;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.button, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  transform: translateX(22px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.button .button__icon {
+  position: absolute;
+  transform: translateX(125px);
+  height: 100%;
+  width: 39px;
+  background-color: #137bac;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button .svg {
+  width: 20px;
+  fill: #fff;
+}
+
+.button{
+  justify-self: center;
+}
+.button:hover{
+border-radius: 6px;
+}
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 180px;
+  transform: translateX(0);
+}
+
+
